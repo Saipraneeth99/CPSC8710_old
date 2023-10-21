@@ -332,14 +332,14 @@ class Question extends Component {
 		const { questions, qlev, current, correct, presentOptions } = this.state;
 		return (
 			<div className="question">
-				{this.state.poll && (
+				{/* {this.state.poll && (
 					<Poll
 						options={questions[qlev].options}
 						open={this.state.poll}
 						close={this.closeMessage}
 						data={this.state.data}
 					/>
-				)}
+				)} */}
 
 				{this.state.won && <Celebrate />}
 				<Lose open={this.state.lose} />

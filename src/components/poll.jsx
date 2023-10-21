@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Modal from "react-modal";
-import { DynamicBarChart } from "react-dynamic-charts";
-import "react-dynamic-charts/dist/index.css"; // Don't forget to import the styles
+// import { DynamicBarChart } from "react-dynamic-charts";
+// import "react-dynamic-charts/dist/index.css"; // Don't forget to import the styles
 
 class Poll extends Component {
 	Continue = async () => {
@@ -39,11 +39,11 @@ class Poll extends Component {
 				}}
 				isOpen={this.props.open}
 			>
-				<DynamicBarChart
+				{/* <DynamicBarChart
 					iterationTimeout={100}
 					labelStyles={{ color: "white" }}
 					data={this.props.data}
-				/>
+				/> */}
 				{console.log(this.props.data)}
 				<button
 					style={{ width: "inherit" }}
